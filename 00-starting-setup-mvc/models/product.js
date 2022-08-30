@@ -1,4 +1,6 @@
-const products = [];
+const file = require('fs');
+const path =require('../util/path');
+const pathLib = require('path');
 
 module.exports = class Product{
 
@@ -7,7 +9,7 @@ module.exports = class Product{
     }
 
     save(){
-        products.push(this);
+        const p = pathLib.join(path)
     }
 
     static fetch(){
